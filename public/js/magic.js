@@ -16,7 +16,7 @@ function addCompany(entry) {
             position: results[0].geometry.location
         });
       } else {
-        console.log("Geocode was not succesful")
+        console.log("Geocode was not succesful for the following reason : " + status);
       }
     }
   );
