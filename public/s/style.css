@@ -1,0 +1,65 @@
+
+html { height: 100% }
+body { height: 100%; margin: 0px; padding: 0px }
+
+#content {
+  position:absolute;
+  z-index:1000;
+  width: 410px;
+  top: 30px;
+  right: 0;
+}
+
+.panel {
+  background-color:#fff;
+  opacity:0.85;
+}
+
+#form_container {
+  position:absolute;
+  z-index:1001;
+  right:0;
+  opacity:0.95;
+  display:none;
+}
+
+#form_container #cancel {
+  position:absolute;
+  z-index:1002;
+  right:40px;
+  padding-top:10px;
+  font-size:1.2em;
+}
+
+#form_container #form {
+  width: 700px;
+  height:99%;
+  frameborder:0px;
+  marginheight:0px;
+  marginwidth:0px;
+}
+
+#content h1 {
+  margin:0;
+  padding:10px;
+  text-align:center;
+}
+
+#content #description {
+  position: absolute;
+  top:60px;
+  padding:10px;
+  width: 310px;
+  right:0;
+}
+
+#content #form_link {
+  position: absolute;
+  top:130px;
+  padding:10px;
+  width: 310px;
+  right:0;
+}
+
+
+#map_canvas { height: 100%; width: 100%; }
