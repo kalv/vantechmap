@@ -1,12 +1,12 @@
 
 html { height: 100% }
-body { height: 100%; margin: 0px; padding: 0px }
+body { height: 100%; margin: 0px; padding: 0px; font-family: 'Droid Serif', arial, serif; }
 
 #content {
   position:absolute;
   z-index:1000;
-  width: 410px;
-  top: 30px;
+  width: 450px;
+  top: 20px;
   right: 0;
 }
 
@@ -49,7 +49,7 @@ body { height: 100%; margin: 0px; padding: 0px }
   position: absolute;
   top:60px;
   padding:10px;
-  width: 310px;
+  width: 300px;
   right:0;
 }
 
@@ -57,7 +57,7 @@ body { height: 100%; margin: 0px; padding: 0px }
   position: absolute;
   top:130px;
   padding:10px;
-  width: 310px;
+  width: 200px;
   right:0;
 }
 
