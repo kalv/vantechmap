@@ -53,6 +53,17 @@ body { height: 100%; margin: 0px; padding: 0px; font-family: 'Droid Serif', aria
   right:0;
 }
 
+#made_by {
+  position: absolute;
+  z-index:1000;
+  bottom:0;
+  padding:10px;
+  width: 210px;
+  font-size:0.7em;
+  right:150px;
+  margin:0;
+}
+
 #content #form_link {
   position: absolute;
   top:130px;

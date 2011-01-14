@@ -6,10 +6,7 @@ I built this so that it would be easier for others to see what's going on in van
 
 ## Todo:
 
-- Pull and parse spreadsheet and render placeholders on the map
-- Show information when clicked
-- Google font to be the same as the form theme.
-- hide the iframe when a company is added
+- Made by
 - Embed me - show prompt with the URL to be placed into html (iframe)
 - Change the image url for markercluster...
 - Close all info windows before opening another
