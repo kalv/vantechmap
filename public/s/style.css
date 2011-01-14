@@ -62,3 +62,15 @@ body { height: 100%; margin: 0px; padding: 0px; font-family: 'Droid Serif', aria
 }
 
 #map_canvas { height: 100%; width: 100%; }
+
+.map_company_name {
+  font-size: 1em;
+  font-weight:normal;
+  margin: 5px 0px;
+}
+
+.map_comany_info {
+  font-size: 0.8em;
+  color: #222;
+  margin: 0;
+}
