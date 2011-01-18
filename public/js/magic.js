@@ -13,6 +13,7 @@ var VanTechMap = {
   geocoder: new google.maps.Geocoder(),
   mc: null,
   infoWindows: null,
+  numberOfMarkers: null,
   initialize: function() {
     var startLatlng = new google.maps.LatLng(49.278893, -123.115883);
     var mapOptions = {
@@ -24,6 +25,7 @@ var VanTechMap = {
     };
     this.markers = [];
     this.infoWindows = [];
+    this.numberOfMarkers = 0;
 
     VanTechMap.map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
   },
@@ -62,6 +64,7 @@ var VanTechMap = {
   },
   addMarker: function(marker) {
     VanTechMap.mc.addMarker(marker);
+    VanTechMap.numberOfMarkers++;
   },
   addInfoLocation: function(geo_location, entry) {
     console.log(entry);
@@ -84,7 +87,7 @@ var VanTechMap = {
     }
     else {
       VanTechMap.infoWindows[geo_location] = new google.maps.InfoWindow({
-        content: company_info
+        content: company_info,
       });
       VanTechMap.infoWindows[geo_location].setPosition(geo_location);
     }

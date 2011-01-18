@@ -4,10 +4,10 @@ body { height: 100%; margin: 0px; padding: 0px; font-family: 'Droid Serif', aria
 
 #content {
   position:absolute;
-  z-index:1000;
-  width: 450px;
-  top: 20px;
-  right: 0;
+  z-index:1;
+  width: 280px;
+  top: 0;
+  left: 90px;
 }
 
 .panel {
@@ -17,7 +17,7 @@ body { height: 100%; margin: 0px; padding: 0px; font-family: 'Droid Serif', aria
 
 #form_container {
   position:absolute;
-  z-index:1001;
+  z-index:2;
   right:0;
   opacity:0.95;
   display:none;
@@ -25,7 +25,7 @@ body { height: 100%; margin: 0px; padding: 0px; font-family: 'Droid Serif', aria
 
 #form_container #cancel {
   position:absolute;
-  z-index:1002;
+  z-index:2;
   right:40px;
   padding-top:10px;
   font-size:1.2em;
@@ -41,36 +41,30 @@ body { height: 100%; margin: 0px; padding: 0px; font-family: 'Droid Serif', aria
 
 #content h1 {
   margin:0;
-  padding:10px;
-  text-align:center;
+  font-size:1.2em;
+  padding:10px 10px 10px 20px;
+  font-weight:normal;
 }
 
 #content #description {
-  position: absolute;
-  top:60px;
-  padding:10px;
-  width: 300px;
-  right:0;
+  margin: 0;
+  padding:0px 0px 10px 20px;
+  font-size: 0.8em;
+  color: #333;
 }
 
 #made_by {
   position: absolute;
-  z-index:1000;
+  z-index:1;
   bottom:0;
   padding:10px;
   width: 210px;
   font-size:0.7em;
-  right:150px;
+  left:90px;
   margin:0;
 }
 
-#content #form_link {
-  position: absolute;
-  top:130px;
-  padding:10px;
-  width: 200px;
-  right:0;
-}
+
 
 #map_canvas { height: 100%; width: 100%; }
 
@@ -78,10 +72,12 @@ body { height: 100%; margin: 0px; padding: 0px; font-family: 'Droid Serif', aria
   font-size: 1em;
   font-weight:normal;
   margin: 5px 0px;
+  width:270px;
 }
 
 .map_comany_info {
   font-size: 0.8em;
   color: #222;
+  width:270px;
   margin: 0;
 }
