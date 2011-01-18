@@ -7,6 +7,5 @@ This is a just a little mash up using Google docs forms/spreadsheets to easily s
 Thanks to the help from (@bootup)[http://twitter.com/bootup] for both the space to work out of while I was in vancouver and seeding the data.
 
 ## Notes/Todo:
-- Embed me - show prompt with the URL to be placed into html (iframe)
 - Change the image url for markercluster...
 - Bug: Close all info windows before opening another

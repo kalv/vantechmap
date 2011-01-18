@@ -121,5 +121,15 @@ $(document).ready(function() {
     return false;
   });
 
+  $("#close_embed_me").click(function() {
+    $("#embed_me").hide();
+    return false;
+  });
+
+  $("#embed_me_link").click(function() {
+    $("#embed_me").show();
+    return false;
+  });
+
   $("#spreadsheet_src").attr("src", "https://spreadsheets.google.com/feeds/list/0AiraKKMVEVKfdHY0Q1VEeE4xTkRqY2RKYTItX19HNXc/od6/public/values?alt=json-in-script&callback=VanTechMap.renderCompanies");
 });

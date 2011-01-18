@@ -12,6 +12,10 @@
     %link{:href => 'http://fonts.googleapis.com/css?family=Droid+Serif', :rel => 'stylesheet', :type => 'text/css'}
     %meta{:name => "viewport", :content => "initial-scale=1.0, user-scalable=no"}
   %body
+    - unless @iframe
+      %a{:href => "http://github.com/kalv/vantechmap", :target => "_blank"}
+        %img{:style => "position: absolute; top: 0; right: 0; border: 0;z-index:2;", :src => "https://assets2.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_darkblue_121621.png&path=", :alt => "Fork me on Github"}
+
     #form_container
       %a#cancel{:href=> "/" } Cancel
       %iframe#form{:src => "https://spreadsheets0.google.com/embeddedform?formkey=dHY0Q1VEeE4xTkRqY2RKYTItX19HNXc6MQ"}
@@ -19,11 +23,22 @@
 
     #content
       %h1.panel Vancouver Tech on a Map
-      %p#description.panel
-        A view of tech startups in vancouver
+      - unless @iframe
+        %p#description.panel
+          A view of tech startups in vancouver
+          %br
+          %a#form_link.panel{:href => "https://spreadsheets.google.com/viewform?formkey=dHY0Q1VEeE4xTkRqY2RKYTItX19HNXc6MQ"}
+            Add your tech company now!
+          %br
+          %a#embed_me_link{:href=>"#"}
+            Embed me
+    #embed_me
+      %p
+        You can embed this map on your blog or website. Just place this html into your site:
         %br
-        %a#form_link.panel{:href => "https://spreadsheets.google.com/viewform?formkey=dHY0Q1VEeE4xTkRqY2RKYTItX19HNXc6MQ"}
-          Add your tech company now!
+        %textarea{:rows => 2, :cols => 100}
+          <iframe src="http://vantechmap.heroku.com/?widget=true" width="300" height="200" frameborder="0"></iframe>
+      %input#close_embed_me{:type=>"button", :value => "close"}
 
     %p#made_by.panel
       %a{:href=>"http://twitter.com/#!/kalv", :target=>"_blank"} @kalv
