@@ -69,7 +69,7 @@ var VanTechMap = {
   addInfoLocation: function(geo_location, entry) {
     console.log(entry);
     var company_info = null;
-    if (entry.gsx$companywebsite) {
+    if (entry.gsx$companywebsite.$t != "") {
       company_info = "<h3 class='map_company_name'><a href='"+ entry.gsx$companywebsite.$t
       +"' target='_blank'>" + entry.gsx$companyname_2.$t + "</a></h3>";
     }

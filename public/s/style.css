@@ -64,8 +64,6 @@ body { height: 100%; margin: 0px; padding: 0px; font-family: 'Droid Serif', aria
   margin:0;
 }
 
-
-
 #map_canvas { height: 100%; width: 100%; }
 
 .map_company_name {
