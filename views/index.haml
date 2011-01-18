@@ -22,7 +22,9 @@
         Loading...
 
     #content
-      %h1.panel Vancouver Tech on a Map
+      %h1.panel
+        %a{:href => "http://vantechmap.heroku.com"}
+          Vancouver Tech on a Map
       - unless @iframe
         %p#description.panel
           A view of tech startups in vancouver

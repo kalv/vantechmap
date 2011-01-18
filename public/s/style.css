@@ -51,6 +51,11 @@ p {
   font-weight:normal;
 }
 
+#content h1 a, #content h1 a:visited, #content h1 a:hover {
+  color: #111;
+  text-decoration:none;
+}
+
 #content #description {
   margin: 0;
   padding:0px 0px 10px 20px;
